@@ -46,7 +46,7 @@ stages:
   dependsOn: Build
   jobs:
   - deployment: DeployToWebApp
-    displayName: "Deploy to demoproject"
+    displayName: "Deploy to newdemo6565"
     environment: "production"
     strategy:
       runOnce:
@@ -58,6 +58,6 @@ stages:
           - task: AzureWebApp@1
             displayName: "Deploy Web App"
             inputs:
-              azureSubscription: "abrarahmed"
-              appName: "demoproject"
+              azureSubscription: "newsource"
+              appName: "newdemo6565"
               package: "$(Pipeline.Workspace)/drop"
